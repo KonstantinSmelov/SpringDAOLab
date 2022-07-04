@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - preConditions:
+      - dbms:
+          type: h2
+  - changeSet:
+      id: create-authors
+      author: KMS
+  - include:
+      file: create-authors-table.sql
+      relativeToChangelogFile: true

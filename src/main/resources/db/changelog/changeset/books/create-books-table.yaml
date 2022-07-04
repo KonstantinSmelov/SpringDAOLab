@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - preConditions:
+      - dbms:
+          type: h2
+  - changeSet:
+      id: create-books
+      author: KMS
+  - include:
+      file: create-books-table.sql
+      relativeToChangelogFile: true
